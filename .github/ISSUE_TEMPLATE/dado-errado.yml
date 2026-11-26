@@ -1,0 +1,51 @@
+name: "Dado errado"
+description: "Um dado da ficha está diferente do que a Receita mostra"
+title: "[dado] "
+labels: ["dados"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Os dados vêm da Receita Federal, pela Wortic. Esta issue é pública: informe só dado da empresa, nunca dado de pessoa física. Para CPF, telefone ou e-mail pessoal, use o modelo "Remoção de dado (LGPD)".
+  - type: input
+    id: cnpj
+    attributes:
+      label: CNPJ
+      description: Com ou sem pontuação
+      placeholder: "00.000.000/0000-00"
+    validations:
+      required: true
+  - type: dropdown
+    id: campo
+    attributes:
+      label: Campo errado
+      options:
+        - Razão social
+        - Nome fantasia
+        - Situação
+        - Data de abertura
+        - Natureza jurídica
+        - Porte
+        - Capital social
+        - CNAE
+        - Endereço
+        - Telefone
+        - E-mail
+        - Sócios
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: valor-certo
+    attributes:
+      label: Valor certo
+      description: Como deveria estar
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte
+      description: Onde está a informação certa, como um link oficial da Receita ou o comprovante da própria empresa
+    validations:
+      required: true

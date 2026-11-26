@@ -1,0 +1,15 @@
+[package]
+name = "cadastro-cnpj"
+version = "1.0.0"
+edition = "2024"
+description = "Modelo da Wortic: cadastro de clientes que se preenche pelo CNPJ, com backend em Rust e a API aberta cnpj.wortic.com"
+license-file = "LICENSE"
+
+[dependencies]
+tiny_http = "0.12"
+ureq = "2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

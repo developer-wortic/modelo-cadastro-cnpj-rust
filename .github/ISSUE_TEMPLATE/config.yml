@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação da API
+    url: https://cnpj.wortic.com/docs
+    about: Exemplos prontos em 10 linguagens e a descrição dos erros.
+  - name: Segurança
+    url: https://github.com/developer-wortic/modelo-cadastro-cnpj-rust/security/advisories/new
+    about: Falha de segurança entra por aqui, em privado. Veja o arquivo SECURITY.md.
+  # PENDENTE: esta página responde 404 ao vivo. Confirmar antes de publicar.
+  - name: Privacidade e pedido de dado pessoal
+    url: https://cnpj.wortic.com/privacidade
+    about: Correção e remoção de dado pessoal.

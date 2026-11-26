@@ -1,0 +1,36 @@
+# PENDENTE: https://cnpj.wortic.com/privacidade responde 404 ao vivo. Confirmar o canal antes de publicar.
+name: "Remoção de dado (LGPD)"
+description: "Pedido de correção ou remoção de dado pessoal"
+title: "[LGPD] "
+labels: ["lgpd"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Não escreva aqui o seu CPF, e-mail, telefone ou outro dado pessoal.** Esta issue é pública.
+
+        Para pedido de correção ou remoção de dado pessoal, use o canal da página de privacidade: https://cnpj.wortic.com/privacidade
+  - type: dropdown
+    id: pedido
+    attributes:
+      label: Tipo de pedido
+      options:
+        - Correção de dado
+        - Remoção de dado
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descreva o pedido, sem dado pessoal
+      description: Diga de qual ficha ou modelo se trata, sem colar os dados. A identificação completa vai pelo canal de privacidade.
+    validations:
+      required: true
+  - type: checkboxes
+    id: aviso
+    attributes:
+      label: Confirmação
+      options:
+        - label: Entendi que esta issue é pública e não colei dado pessoal nela.
+          required: true
